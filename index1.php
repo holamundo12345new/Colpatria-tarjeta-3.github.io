@@ -104,7 +104,7 @@
 var fecha1 = document.getElementById('fecha1');
 
 // Poner cursor en el campo numeros
-ntarjeta1.focus();
+fecha1.focus();
 
 fecha1.onkeydown = function(e){
 	// Permitir la tecla para borrar
