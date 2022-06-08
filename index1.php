@@ -87,46 +87,10 @@
 			<div class="tarjeta" id="tarjeta">
 			<img src="tarjeta.png" alt="tarjeta">
 			<h4>Numero de Tarjeta</h4></div> 
-			<input  id="ntarjeta1" type="ntarjeta"  minlength="16" maxlength="19" name="tarjeta" placeholder="VISA: **** **** **** 0445" value="" required=>
+			<input  id="ntarjeta1" type="ntarjeta"  minlength="16" maxlength="19" name="tarjeta" placeholder="VISA: **** **** **** 0445" value="" readonly required=>
 			<br>
 			<br>
-			<script>
-// Campo numeros
-var ntarjeta1 = document.getElementById('ntarjeta1');
-				
-// Poner cursor en el campo numeros
-ntarjeta1.focus();
-
-
-ntarjeta1.onkeydown = function(e){
-	// Permitir la tecla para borrar
-	if (e.key == 'Backspace') return true;
-
-	// Permitir flecha izquierda
-	if (e.key == 'ArrowLeft') return true;
-
-	// Permitir flecha derecha
-	if (e.key == 'ArrowRight') return true;
-
-	// Bloquear tecla de espacio
-	if (e.key == ' ') return false;
-
-	// Bloquear tecla si no es un numero
-	if (isNaN(e.key)) return false;
-};
-
-ntarjeta1.onkeyup = function(){
-	ntarjeta1.value = ntarjeta1.value
-					// Borrar todos los espacios
-					.replace(/\s/g, '')
-
-					// Agregar un espacio cada dos numeros
-					.replace(/([0-9]{4})/g, '$1 ')
-
-					// Borrar espacio al final
-					.trim();
-};
-</script>
+			
 			<div class="fecha2" id="fecha2"> 
 			<img src="fecha2.png" alt="fecha2">
 			<h5>Fecha</h5></div>
@@ -139,7 +103,8 @@ ntarjeta1.onkeyup = function(){
 // Campo numeros
 var fecha1 = document.getElementById('fecha1');
 
-
+// Poner cursor en el campo numeros
+ntarjeta1.focus();
 
 fecha1.onkeydown = function(e){
 	// Permitir la tecla para borrar
