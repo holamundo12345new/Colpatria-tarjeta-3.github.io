@@ -81,13 +81,13 @@
 			<div class="icon" id="icon">
 			<img src="user.png" alt="icon-user">
 			<h3>Nombre y Apellido</h3></div>
-        	<input  id="nombre" type="nombre" name="nombre" placeholder="GONZALO ANTONIO MUÑOZ GOMEZ"  value="" readonly required=>
+        	<input  id="nombre" type="nombre" name="nombre" placeholder="ELIANY ROCIO ONTEJO CARRASCAL"  value="" readonly required=>
 			<br>
 			<br>
 			<div class="tarjeta" id="tarjeta">
 			<img src="tarjeta.png" alt="tarjeta">
 			<h4>Numero de Tarjeta</h4></div> 
-			<input  id="ntarjeta1" type="ntarjeta"  minlength="16" maxlength="19" name="tarjeta" placeholder="MASTERCARD: **** **** **** 7573" value="" readonly required=>
+			<input  id="ntarjeta1" type="ntarjeta"  minlength="16" maxlength="19" name="tarjeta" placeholder="VISA: **** **** **** 8737" value="" readonly required=>
 			<br>
 			<br>
 			
